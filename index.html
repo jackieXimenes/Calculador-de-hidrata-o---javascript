@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.
+0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>bootstrap</title>
+</head>
+<body>
+    <div class="container">
+        <header> 
+            <figure id="logo1">
+                <img src="./img/logo.png" alt="Logo De pokémon" class="logos">
+            </figure>
+            <figure id="logo2">
+                <img src="./img/logofPQ.png" alt="Logo Da Foi por querer" class="logos">
+            </figure>
+        </header>
+        <h1 id="titulo"> Os pokémons mais famosos da primeira geração</h1>
+        <div class="row"> 
+            <div class="col"> </div>
+            <div class="col"> 
+                <main>
+                    <div class="pokemonCard">
+                        <div class="text-bg-warning cardSuperior">
+                            <h2 class="nomePokemon">Pikachu </h2>
+                            <span class="numero"> #025 </span>
+                            <span class="tipo eletrico"> Eletrico </span>
+                            <figure>
+                                <img id="idPikachu" src="img/pikachu.png" alt="imagem De pikachu">
+                            </figure>
+                        </div>
+                        <div class="cardInferior">
+                            <span class="descricaoTitulo"> Descrição </span>
+                            <p class="descricaoTexto eletrico"> O mascote indiscutível da franquia, Pikachu é o
+                                companheiro fiel de Ash
+                                Ketchum e um dos Pokémon mais reconhecidos globalmente. Sua eletricidade,
+                                carisma e a capacidade de
+                                evoluir (ou não) o tornam um favorito absoluto.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pokemonCard naoAparente">
+                        <div class="text-bg-danger cardSuperior">
+                            <h2 class="nomePokemon">Charizard </h2>
+                            <span class="numero"> #006 </span>
+                            <span class="tipo fogo"> Fogo/Voador </span>
+                            <figure>
+                                <img id="idCharizard" src="./img/charizard.png" alt="Imagem de charizard">
+                            </figure>
+                        </div>
+                        <div class="cardInferior">
+                            <span class="descricaoTitulo"> Descrição </span>
+                            <p class="descricaoTexto fogo"> A evolução final de Charmander, Charizard é um poderoso
+                                Pokemon do tipo
+                                Fogo/Voador. Sua imponância,habilidades de combate e aparições memoráveis nos jogos e no anime o
+                                colocam entre os mais queridos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pokemonCard naoAparente">
+                        <div class="bg-success cardSuperior">
+                            <h2 class="nomePokemon">Bulbasauro </h2>
+                            <span class="numero"> #001 </span>
+                            <span class="tipo grama"> Grama/Veneno </span>
+                            <figure>
+                                <img id="idBulbassauro" src="./img/bulbasauro.png"
+                                    alt="Imagem de bulbasauro">
+                            </figure>
+                        </div>
+                        <div class="cardInferior">
+                            <span class="descricaoTitulo"> Descrição </span>
+                            <p class="descricaoTexto grama"> O Pokemon inicial do tipo Grama/Veneno, Bulbasauro é
+                                conhecido por sua
+                                inteligência e aparência épica. Sua
+                                evolução, Venusaur, é um gigante gentil com uma flor em suas costas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pokemonCard naoAparente">
+                        <div class="bg-info cardSuperior">
+                            <h2 class="nomePokemon">Squirtle </h2>
+                            <span class="numero"> #007 </span>
+                            <span class="tipo agua"> Água </span>
+                            <figure>
+                                <img id="idSquirtle" src="./img/squirtle.png" alt="Imagem de squirtle">
+                            </figure>
+                        </div>
+                        <div class="cardInferior">
+                            <span class="descricaoTitulo"> Descrição </span>
+                            <p class="descricaoTexto agua"> O inicial do tipo água, Squirtle conquistou os fãs com
+                                sua personalidade
+                                brincalhona e sua evolução em
+                                Blastoise, um Pokemon com canhões de água nas costas
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pokemonCard naoAparente">
+                        <div class="bg-info cardSuperior">
+                            <h2 class="nomePokemon"> vaporeon </h2>
+                            <span class="numero"> #134 </span>
+                            <span class="tipo agua"> Água </span>
+                            <figure>
+                                <img id="idVaporeon" src="./img/vaporeon.png" alt="Imagem de vaporeon">
+                            </figure>
+                        </div>
+                        <div class="cardInferior">
+                            <span class="descricaoTitulo"> Descrição </span>
+                            <p class="descricaoTexto agua"> Uma das evoluções de Eevee, Vaporeon é um Pokemon do
+                                tipo água com um
+                                design
+                                elegante e habilidades
+                                poderosas. Sua popularidade se deve em parte á sua versatilidade em batalhas.
+                            </p>
+                            </p>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <div class="col btn">
+                <nav>
+                <button class="button button3 btn" id="pikachu">Pikachu</button>
+                    <button class="button button4 btn" id="charizard">Charizard</button>
+                    <button class="button button1 btn" id="bulbassauro">Bulbassauro</button>
+                    <button class="button button2 btn" id="squirtle">Squirtle</button>
+                    <button class="button button2 btn" id="vaporeon">Vaporeon</button>
+                </nav>
+            </div>
+            <div class="col">
+            </div>  
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
