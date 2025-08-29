@@ -1,33 +1,28 @@
-let cards = document.querySelectorAll('.pokemonCard');
+let nome = document.getElementById("nome");
+let peso = document.getElementById("peso");
+let idade1 = document.getElementById("idade");
+let btn = document.getElementById("btn");
+let resposta = document.getElementById("resposta");
 
-var btnPikachu = document.getElementById("pikachu").addEventListener("click", function() {
-    cards.forEach(function(card){
-      card.classList.add('naoAparente');
-    });
-    cards[0].classList.toggle('naoAparente');
-  });
 
-var btnCharizard = document.getElementById("charizard").addEventListener("click", function() {
-  cards.forEach(function(card){
-    card.classList.add('naoAparente');
-  });
-  cards[1].classList.toggle('naoAparente');
-});
-var btnBulbasauro = document.getElementById("bulbassauro").addEventListener("click", function() {
-  cards.forEach(function(card){
-    card.classList.add('naoAparente');
-    });
-    cards[2].classList.toggle('naoAparente');
-  });
-var btnSquirtle = document.getElementById("squirtle").addEventListener("click", function() {
-  cards.forEach(function(card){
-    card.classList.add('naoAparente');
-    });
-  cards[3].classList.toggle('naoAparente');
-});
-var btnVaporeon = document.getElementById("vaporeon").addEventListener("click", function() {
-  cards.forEach(function(card){
-    card.classList.add('naoAparente');
-    });
-  cards[4].classList.toggle('naoAparente');
-});
+btn.addEventListener("click", Agua);
+
+function Agua (){
+  let pesoParaUsar = Number(peso.value)/1000;
+  let QuantidadeDeAgua = 0;
+  let idade = idade1.value;
+
+
+    if (idade<17){
+     QuantidadeDeAgua = 40
+    }
+    else if(idade>=18 && idade<55){
+      QuantidadeDeAgua = 35
+    }
+    else{
+      QuantidadeDeAgua = 30
+    }
+
+    let calculo = QuantidadeDeAgua*pesoParaUsar;
+    resposta.innerHTML= `</br> Olá ${nome.value}, você deve beber ${calculo} litros de água diários para ficar hidratado!`; 
+}
